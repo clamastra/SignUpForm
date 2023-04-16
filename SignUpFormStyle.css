@@ -1,0 +1,54 @@
+
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.MainContent {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.LeftHandSide {
+    display: flex;
+    width: 34vw;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+}
+
+.Odin-Header {
+    height: auto;
+    position: relative;
+    top: 20vh;
+    bottom: auto;
+    background-color: black;
+}
+
+.SignupText {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 10%;
+    font-size: small;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.SignupInputs {
+    display: flex;
+    align-content: flex-start;
+    font-size: small;
+
+}
+
+.SignupInputs > h4 {
+    font-size: medium;
+}
