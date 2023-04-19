@@ -1,8 +1,7 @@
-
-
 body {
     display: flex;
     margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .MainContent {
@@ -24,6 +23,12 @@ body {
     justify-content: center;
 }
 
+.RightHandSide {
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+}
+
 .Odin-Header {
     height: auto;
     position: relative;
@@ -42,13 +47,74 @@ body {
     margin-right: 10%;
 }
 
+.SignupText > h3{
+    font-weight: 500;
+}
+
 .SignupInputs {
     display: flex;
-    align-content: flex-start;
     font-size: small;
-
+    flex-wrap: wrap;
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .SignupInputs > h4 {
     font-size: medium;
+    flex-basis: 100%;
+    align-self: flex-start;
+}
+
+.SignupInputs > div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    width: 45%;
+}
+
+.SignupInputs > div > label {
+    text-align: left;
+    color: rgb(75, 75, 75);
+    font-weight: 600;
+    font-size: small;
+}
+
+.AccountCreate {
+    margin: 5%;
+    background-color: rgb(68, 107, 68);
+    font-weight: 600;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    max-width: 150px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px black;
+}
+
+.AlreadyAccount {
+    text-align: left;
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(57, 118, 58);
+    font-weight: 600;
 }
