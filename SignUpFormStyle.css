@@ -1,3 +1,8 @@
+@font-face {
+    font-family: OdinFont;
+    src: url(OdinFont.otf);
+}
+
 body {
     display: flex;
     margin: 0;
@@ -14,6 +19,7 @@ body {
 
 .LeftHandSide {
     display: flex;
+    flex-direction: column;
     width: 34vw;
     height: 100vh;
     background-image: url(background.jpg);
@@ -21,6 +27,7 @@ body {
     background-size: cover;
     color: white;
     justify-content: center;
+    max-width: 400px;
 }
 
 .RightHandSide {
@@ -30,11 +37,28 @@ body {
 }
 
 .Odin-Header {
-    height: auto;
-    position: relative;
-    top: 20vh;
-    bottom: auto;
-    background-color: black;
+    margin-top: -30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    color: white;
+    padding: 65px 0px 50px 0px;
+    width: 100%;
+    height: 10px ;
+    font-family: OdinFont, sans-serif;
+    font-size:20mm;
+}
+
+.CreditsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.Credits {
+    font-size: 2mm;
+    position: absolute;
+    bottom: 5px;
 }
 
 .SignupText {
@@ -45,6 +69,7 @@ body {
     font-size: small;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 .SignupText > h3{
@@ -83,6 +108,7 @@ body {
 
 .AccountCreate {
     margin: 5%;
+    margin-left: 10%;
     background-color: rgb(68, 107, 68);
     font-weight: 600;
     color: white;
@@ -97,6 +123,8 @@ body {
 input {
     border: 1px solid black;
     border-radius: 3px;
+    height: 22px;
+    padding-left: 8px;
 }
 
 input[type=text]:focus,
@@ -110,7 +138,7 @@ input[type=number]:focus {
 
 .AlreadyAccount {
     text-align: left;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 a {
