@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Form</title>
     <link rel="stylesheet" href="SignUpFormStyle.css">
-    <script src="SignUpFormScript.js"></script>
 </head>
 <body> 
     <div class="MainContent">
@@ -41,13 +40,14 @@
                     <input type="number" id="user_phone" name="user_phone" placeholder="(XXX)-XXX-XXXX">
                 </div>
                 <div>
-                    <label for="Password">PASSWORD</label>
+                    <label for="Password" id="password1label">PASSWORD</label>
                     <input type="password" id="user_password" name="user_password">
                 </div>
                 <div>
-                    <label for="Confirm Password">CONFIRM PASSWORD</label>
+                    <label for="Confirm Password" id="password2label">CONFIRM PASSWORD</label>
                     <input type="password" id="confirm_password" name="confirm_password">
                 </div>
+                <span id="PasswordError">Error: passwords need to match</span>
             </form>
 
             <button class="AccountCreate" type="submit">Create Account</button>
@@ -55,4 +55,5 @@
         </div>
     </div>
 </body>
+<script src="SignUpFormScript.js"></script>
 </html>
